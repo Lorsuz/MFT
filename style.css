@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sora;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+body header {
+  height: 100vh;
+  background: url(img/fundo-mulheres.jpg) no-repeat center bottom;
+  background-size: 100% 90%;
+  background-position: contain;
+  display: flex;
+  justify-content: center;
+}
+body header .background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), #000000);
+}
+body header nav {
+  width: 100%;
+  height: 80px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #bb0d0d;
+}
+body header nav ul {
+  display: flex;
+}
+body header nav ul:first-child li {
+  margin: 0 40px;
+}
+body header nav ul:last-child li {
+  margin: 0 10px;
+  background: #ffffff;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header nav ul:last-child li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header nav ul:last-child li a i {
+  font-size: 1.5rem;
+  color: #bb0d0d;
+}
+body header nav ul a {
+  color: #ffffff;
+}
+body header .capa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header .capa > div {
+  margin: 25px;
+}
+body header .capa .left {
+  width: 40%;
+}
+body header .capa .left > div {
+  background: #ffffff;
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 550px;
+  height: 180px;
+  transform: scale(0.9);
+}
+body header .capa .left > div .img {
+  width: 700px;
+  height: 100%;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 3px;
+}
+body header .capa .left > div .img img {
+  width: 100%;
+  height: 100%;
+}
+body header .capa .left > div .text {
+  height: 100%;
+}
+body header .capa .left > div .text h3 {
+  margin-bottom: 10px;
+  color: #bb0d0d;
+}
+body header .capa .left > div .text p {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+body header .capa .left > div .text .more {
+  display: flex;
+  justify-content: end;
+  padding: 0 20px;
+}
+body header .capa .left > div .text .more a {
+  background: #bb0d0d;
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: #ffffff;
+}
+body header .capa .right {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  width: 40%;
+  padding: 50px 0;
+  justify-content: center;
+}
+body header .capa .right span {
+  display: block;
+  position: relative;
+  margin-bottom: 40px;
+  width: 50%;
+}
+body header .capa .right span::after {
+  content: "";
+  background: #c1c1c1;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+body header .capa .right h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+body header .capa .right p {
+  margin-bottom: 50px;
+}
+body header .capa .right .news {
+  display: flex;
+}
+body header .capa .right .news a {
+  background: #bb0d0d;
+  padding: 10px 30px;
+  border-radius: 50px;
+  display: block;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+body footer {
+  background: #000 url(img/footer.jpg) no-repeat;
+  background-position: 0 450px;
+  background-size: contain;
+  color: #ffffff;
+}
+body footer > h2 {
+  margin: 0 auto;
+  padding: 30px 0 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+body footer > p {
+  width: 70%;
+  margin: 0 auto 20px;
+  padding: 0px 0 10px;
+  text-align: center;
+}
+body footer div.footer-horizontal {
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+body footer div.footer-horizontal h4 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+body footer div.footer-horizontal > div {
+  width: 33%;
+  padding: 10px 30px 0 50px;
+  height: 350px;
+}
+body footer div.footer-horizontal > div.devs h4 {
+  margin-bottom: 15px;
+}
+body footer div.footer-horizontal > div.devs h5 {
+  font-size: 1.2rem;
+}
+body footer div.footer-horizontal > div.devs span {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #c1c1c1;
+}
+body footer div.footer-horizontal > div.contato {
+  border-right: 1px solid rgb(255, 255, 255);
+  border-left: 1px solid rgb(255, 255, 255);
+}
+body footer div.footer-horizontal > div.contato ul.dados li {
+  margin-top: 10px;
+}
+body footer div.footer-horizontal > div.contato ul.redes-sociais {
+  display: flex;
+  justify-content: center;
+}
+body footer div.footer-horizontal > div.contato ul.redes-sociais li {
+  margin: 40px 20px;
+}
+body footer div.footer-horizontal > div.contato ul.redes-sociais li a {
+  position: relative;
+  transition: 100ms;
+  top: 0;
+}
+body footer div.footer-horizontal > div.contato ul.redes-sociais li a i {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+body footer div.footer-horizontal > div.contato ul.redes-sociais li a:hover {
+  top: -5px;
+}
+body footer div.footer-horizontal > div.info ul li {
+  margin-top: 10px;
+}
+body footer div.footer-horizontal > div.info ul li a {
+  color: rgb(255, 255, 255);
+}
+body footer div.footer-horizontal > div.info ul li a:hover {
+  text-decoration: underline;
+}
+body footer div.copy p {
+  text-align: center;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
