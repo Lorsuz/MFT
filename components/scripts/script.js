@@ -92,3 +92,4 @@ const sys = new Slide(
 	"main section.about .container .geral-data .data-self .xp .slides .next",
 	"main section.about .container .geral-data .data-self .xp .slides .dots .dot"
 );
+
