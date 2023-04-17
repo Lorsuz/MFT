@@ -24,10 +24,17 @@ body nav {
   z-index: 10;
   transition: 500ms;
 }
+body nav > a {
+  display: none;
+}
+body nav > a i {
+  font-size: 2.2rem;
+  color: #ffffff;
+}
 body nav ul {
   display: flex;
 }
-body nav ul:first-child li {
+body nav ul:nth-child(2) li {
   margin: 0 40px;
 }
 body nav ul:last-child li {
@@ -72,9 +79,8 @@ body header .capa {
   justify-content: center;
   align-items: center;
   height: 100%;
-}
-body header .capa > div {
-  margin: 25px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 body header .capa .left {
   width: 50%;
@@ -86,12 +92,12 @@ body header .capa .left h2 {
 }
 body header .capa .left > div {
   background: #ffffff;
-  margin: 20px 0;
+  margin: 20px auto;
   border-radius: 10px;
   padding: 20px;
   display: flex;
   align-items: center;
-  width: 650px;
+  width: 90%;
   height: 180px;
   position: relative;
 }
@@ -156,7 +162,8 @@ body header .capa .right {
   flex-direction: column;
   color: #ffffff;
   width: 40%;
-  padding: 50px 0;
+  min-width: 400px;
+  padding: 50px 0 0 20px;
   justify-content: center;
 }
 body header .capa .right span {
@@ -200,7 +207,7 @@ body main {
   padding: 100px 0;
 }
 body main section {
-  width: 80%;
+  width: 100%;
 }
 body main section.news .header-section {
   width: 100%;
@@ -209,17 +216,22 @@ body main section.news .header-section h1 {
   text-align: center;
   font-size: 2rem;
   color: #bb0d0d;
+  width: 80%;
+  margin: 0 auto;
 }
 body main section.news .header-section p {
+  margin: 0 auto;
+  width: 80%;
   text-align: center;
   margin-bottom: 20px;
 }
 body main section.news .header-section .search-box {
   margin: 0 auto 50px;
   overflow: hidden;
-  height: 40px;
+  height: 45px;
   border: 2px solid #bb0d0d;
-  width: 440px;
+  width: 90%;
+  max-width: 500px;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -246,12 +258,13 @@ body main section.news .header-section .search-box button i {
 body main section.news .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 body main section.news .container .card {
   background: #ffffff;
   width: 30%;
-  max-width: 350px;
+  max-width: 360px;
+  min-width: 300px;
   margin: 15px;
   box-shadow: 0px 0px 15px 0px #c1c1c1;
   border-radius: 3px;
@@ -319,16 +332,20 @@ body main section.news .container .card .text .more a:hover {
   background: #e70808;
 }
 body footer {
-  background: #000 url(img/footer.jpg) no-repeat;
-  background-position: 0 450px;
-  background-size: contain;
+  background: #000;
+  height: auto;
   color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 body footer > h2 {
   margin: 0 auto;
   padding: 30px 0 10px;
   text-align: center;
   font-size: 2rem;
+  width: 90%;
 }
 body footer > p {
   width: 70%;
@@ -337,9 +354,11 @@ body footer > p {
   text-align: center;
 }
 body footer div.footer-horizontal {
-  height: 350px;
+  height: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 body footer div.footer-horizontal h4 {
   font-size: 1.6rem;
@@ -347,6 +366,7 @@ body footer div.footer-horizontal h4 {
 }
 body footer div.footer-horizontal > div {
   width: 33%;
+  min-width: 300px;
   padding: 10px 30px 0 50px;
   height: 350px;
 }
@@ -408,6 +428,43 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
   background: #000000;
+}
+
+@media (max-width: 904px) {
+  body nav > a {
+    display: block;
+  }
+  body nav ul:nth-child(2) {
+    display: none;
+  }
+  header {
+    height: auto !important;
+    background-size: auto 90% !important;
+  }
+  header .left {
+    order: 1;
+    width: 80% !important;
+    margin-bottom: 30px;
+  }
+  header .right {
+    order: 0;
+    width: 80% !important;
+    margin: 40px 0 0 0 !important;
+  }
+}
+@media (max-width: 560px) {
+  header .left {
+    width: 100% !important;
+  }
+  header .left .img {
+    display: none !important;
+  }
+  header .left .text {
+    width: 100% !important;
+  }
+  header .right {
+    width: 90% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
