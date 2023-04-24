@@ -97,6 +97,7 @@ body header .capa .left > div {
   padding: 20px;
   display: flex;
   align-items: center;
+  max-width: 750px;
   width: 90%;
   height: 180px;
   position: relative;
@@ -437,33 +438,33 @@ body::-webkit-scrollbar-thumb {
   body nav ul:nth-child(2) {
     display: none;
   }
-  header {
-    height: auto !important;
-    background-size: auto 90% !important;
+  body header {
+    height: auto;
+    background-size: auto 90%;
   }
-  header .left {
+  body header .capa .left {
     order: 1;
-    width: 80% !important;
+    width: 80%;
     margin-bottom: 30px;
   }
-  header .right {
+  body header .capa .right {
     order: 0;
-    width: 80% !important;
-    margin: 40px 0 0 0 !important;
+    width: 80%;
+    margin: 40px 0 0 0;
   }
 }
 @media (max-width: 560px) {
-  header .left {
-    width: 100% !important;
+  body header .capa .left {
+    width: 100%;
   }
-  header .left .img {
-    display: none !important;
+  body header .capa .left > div .img {
+    display: none;
   }
-  header .left .text {
-    width: 100% !important;
+  body header .capa .left > div .text {
+    width: 100%;
   }
-  header .right {
-    width: 90% !important;
+  body header .capa .right {
+    width: 90%;
   }
 }
 
